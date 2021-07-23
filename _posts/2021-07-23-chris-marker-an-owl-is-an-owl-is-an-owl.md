@@ -33,4 +33,6 @@ post_content:
 recommended_posts:
   title:
     - Chris Marker, Junkopia (Criterion Collection)
+    - Chris Marker, Chat écoutant la musique
+    - Chris Marker, Zoo Piece
 ---
