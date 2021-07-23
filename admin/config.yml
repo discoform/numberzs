@@ -54,7 +54,7 @@ collections:
             - { label: YouTube ID, name: youtubeID, widget: string }
             - { label: Alt text and Caption, name: caption, widget: string }
       - label: Post Content
-        name: post_content
+        name: body
         widget: list
         comment: 'Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.'
         hint: 'Post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block. Re-order the elements as needed.'
