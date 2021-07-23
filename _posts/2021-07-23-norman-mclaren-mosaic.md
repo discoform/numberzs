@@ -35,4 +35,5 @@ recommended_posts:
     - "Norman McLaren: Lines Horizontal"
     - "Norman McLaren: Lines Vertical"
     - "Norman McLaren: Canon"
+    - "Norman McLaren: Pas de Deux"
 ---
