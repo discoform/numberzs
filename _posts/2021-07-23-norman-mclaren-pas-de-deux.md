@@ -2,7 +2,7 @@
 # Layout field provides no options and is hidden in the post editor.
 layout: post
 # Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!
-title: "Norman McLaren: Pas de Deux"
+title: "Norman McLaren: Canon"
 # Published date is automatically generated upon creation of post.
 date: 2021-07-23T18:39:22.426Z
 # Image field is required for SEO.
@@ -14,7 +14,7 @@ excerpt: Canon is an animated representation of the canon musical form.
 media:
   - type: featured_media_youtube
     youtubeID: 2VrnXw9waJI
-    caption: "Norman McLaren: Pas de Deux"
+    caption: "Norman McLaren: Canon"
 # Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.
 post_content:
   - type: content
