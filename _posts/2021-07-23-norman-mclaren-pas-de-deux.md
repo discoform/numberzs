@@ -27,4 +27,10 @@ post_content:
 
 
       Canon is a 1964 National Film Board of Canada animated short co-directed by Norman McLaren and Grant Munro that offers a visual representation of the canon musical form through three animated segments. The soundtrack combines both a recorded classical score by Eldon Rathburn and electronic sounds produced via synthesizer. Canon received a Canadian Film Award "Diploma of Merit" in the Arts and Experimental category.
+# Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
+recommended_posts:
+  title:
+    - "Norman McLaren: Mosaic"
+    - "Norman McLaren: Lines Horizontal"
+    - "Norman McLaren: Lines Vertical"
 ---
