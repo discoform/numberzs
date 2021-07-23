@@ -22,4 +22,8 @@ post_content:
       (2016)" on [Type
       Records](https://www.discogs.com/Belarisk-Moments-In-Shapeshifting/release/8686482)
       (defunkt)'
+# Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
+recommended_posts:
+  title:
+    - "Belarisk: Snake For A Head"
 ---
