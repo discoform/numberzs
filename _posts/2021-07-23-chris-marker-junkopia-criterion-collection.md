@@ -18,7 +18,17 @@ media:
 # Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.
 post_content:
   - type: content
-    content: Codirected by Frank Simeone and John Chapman, JUNKOPIA was filmed at
-      the Emeryville Mudflats outside of San Francisco while Chris Marker was
-      also shooting the Vertigo sections of Sans Soleil.
+    content: >-
+      *"[Chris Marker Archive](https://chrismarker.org/) (French: [maʁkɛʁ]; 29
+      July 1921 – 29 July 2012) was a French writer, photographer, documentary
+      film director, multimedia artist and film essayist. His best known films
+      are La Jetée (1962), Le Joli Mai (1963), A Grin Without a Cat (1977) and
+      Sans Soleil (1983). Marker is often associated with the Left Bank Cinema
+      movement that occurred in the late 1950s and included such other
+      filmmakers as Alain Resnais, Agnès Varda, Henri Colpi and Armand Gatti."*
+
+
+
+
+      Junkopia was filmed at the Emeryville Mudflats outside of San Francisco while Chris Marker was also shooting the Vertigo sections of Sans Soleil.
 ---
