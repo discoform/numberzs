@@ -26,10 +26,13 @@ post_content:
       visual music, abstract film, pixilation and graphical sound.
 
 
-      His awards included an Oscar for the Best Documentary in 1952 for Neighbours, a Silver Bear for best short documentary at the 1956 Berlin International Film Festival Rythmetic and a 1969 BAFTA Award for Best Animated Film for Pas de deux.
+      His awards included an Oscar for the Best Documentary in 1952 for Neighbours, a Silver Bear for best short documentary at the 1956 Berlin International Film Festival Rythmetic.
 
 
-      Pas de deux is a 1968 short dance film by Norman McLaren, produced by the National Film Board of Canada.
+      Pas de deux is a 1968 short dance film by Norman McLaren, produced by the National Film Board of Canada. 
+
+
+      Pas de deux received a 1969 BAFTA Award for Best Animated Film.
 # Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
 recommended_posts:
   title:
