@@ -1,0 +1,102 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: 'assets/images'
+local_backend: true
+collections:
+  - name: 'config'
+    label: 'Site Settings'
+    editor:
+      preview: false
+    files:
+      - label: 'Site Info'
+        name: 'siteInfo'
+        file: _data/siteInfo.yml
+        fields:
+        - { label: About the site, name: about, widget: markdown }
+        - { label: Display About Modal?, name: display, widget: boolean }
+      - label: 'Custom CSS'
+        name: 'customCSS'
+        file: _data/customCSS.yml
+        fields:
+        - {label: 'Code', name: 'customCSS', widget: 'code', default_language: 'CSS', output_code_only: true, required: false, hint: 'CSS Only, please.' }
+        - {label: 'Enable Custom CSS?', name: 'enable-customCSS', widget: 'boolean', required: false, hint: 'Set to true if you want to enable your custom CSS.'}
+  - name: 'post'
+    label: 'Post'
+    folder: '_posts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post', comment: 'Layout field provides no options and is hidden in the post editor.' }
+      - { label: 'Title', name: 'title', widget: 'string', comment: 'Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!', hint: 'Title field provides the post title and a sanitized slug/permalink based on the title content. Use a descriptive title and then do not change it.' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' , comment: 'Published date is automatically generated upon creation of post.', hint: 'Published date is automatically generated upon creation of post, but can be changed if needed.' }
+      - { label: 'Structured Data Image', name: 'image', widget: 'image', comment: 'Image field is required for SEO.', hint: 'This image will not display on the post, but an image is required here for Structured Data and will be used by Open Graph and Twitter summary cards.' }
+      - { label: 'Short Excerpt', name: 'excerpt', widget: 'text', pattern: ['^.{50,140}$', 'Must be between 50–140 characters.'], comment: 'Excerpt is required for SEO. Limit of 140 characters.', hint: 'Excerpt is required for SEO. Limit of 140 characters.' }
+      - label: 'Featured Media'
+        name: 'media'
+        widget: 'list'
+        comment: 'Optional featured media adds one or more full-width image or YouTube embeds to the top of the post.'
+        hint: 'Select one or more images or YouTube embeds to display at the top of the post.'
+        types:
+        - label: 'Image'
+          name: 'featured_media_image'
+          widget: object
+          fields:
+            - { label: Image, name: path, widget: image }
+            - { label: Caption, name: caption, widget: string}
+        - label: 'YouTube Embed'
+          name: 'featured_media_youtube'
+          widget: 'object'
+          required: false
+          fields:
+            - { label: YouTube ID, name: youtubeID, widget: string }
+            - { label: Alt text and Caption, name: caption, widget: string }
+      - label: Post Content
+        name: post_content
+        widget: list
+        comment: 'Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.'
+        hint: 'Post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block. Re-order the elements as needed.'
+        minimize_collapsed: true
+        add_to_top: false
+        types:
+          - label: 'WYSIWYG'
+            name: 'content'
+            widget: 'object'
+            summary: '{{fields.label}}'
+            required: false
+            fields:
+            - {label: 'Post Content', name: 'content', widget: 'markdown',  buttons: [ bold, italic, code, link, heading-three, quote, bulleted-list, numbered-list ] }
+          - label: 'Image'
+            name: 'figure'
+            widget: 'object'
+            required: false
+            fields:
+              - { label: Image, name: path, widget: image }
+              - { label: Alt text and Caption, name: caption, widget: string }
+              - {label: 'Full Width?', name: 'full-width', widget: 'boolean', default: false, hint: 'Display the image fill width.' }
+          - label: 'YouTube Embed'
+            name: 'youtube'
+            widget: 'object'
+            required: false
+            fields:
+              - { label: YouTube ID, name: youtubeID, widget: string }
+              - { label: Alt text and Caption, name: caption, widget: string }
+              - {label: 'Full Width?', name: 'full-width', widget: 'boolean', default: false, hint: 'Display the video fill width.'}
+      - label: 'Add Recommended Post?'
+        name: 'recommended_posts'
+        widget: 'object'
+        comment: 'Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.'
+        hint: 'Recommended posts are optional, but they are good for SEO and internal linking.'
+        required: false
+        fields:
+        - label: 'Posts'
+          name: 'title'
+          widget: 'relation'
+          collection: 'post'
+          search_fields: ['title']
+          value_field: '{{title | slugify}}'
+          display_fields: ['title']
+          multiple: true
+          required: false
