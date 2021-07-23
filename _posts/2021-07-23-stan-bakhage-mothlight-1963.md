@@ -18,7 +18,8 @@ media:
 # Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.
 post_content:
   - type: content
-    content: "*Stellar* is Stan Brakhage's rendered view of the cosmos."
+    content: "*Stellar* is Stan Brakhage's rendered view of the cosmos, released in
+      1995."
 # Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
 recommended_posts:
   title:
