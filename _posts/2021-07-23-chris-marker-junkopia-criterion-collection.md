@@ -29,4 +29,10 @@ post_content:
 
 
       Junkopia was filmed at the Emeryville Mudflats outside of San Francisco while Chris Marker was also shooting the Vertigo sections of Sans Soleil.
+# Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
+recommended_posts:
+  title:
+    - Chris Marker, An Owl is an Owl is an Owl
+    - Chris Marker, Chat écoutant la musique
+    - Chris Marker, Zoo Piece
 ---
