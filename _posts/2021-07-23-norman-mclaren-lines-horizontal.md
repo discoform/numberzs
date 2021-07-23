@@ -30,4 +30,10 @@ post_content:
 
 
       Lines Horizontal is Normand McLaren and Evelyn Lambart, with Music by Pete Seeger.
+# Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
+recommended_posts:
+  title:
+    - "Norman McLaren: Canon"
+    - "Norman McLaren: Lines Vertical"
+    - "Norman McLaren: Mosaic"
 ---
