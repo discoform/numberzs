@@ -27,5 +27,5 @@ post_content:
 # Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
 recommended_posts:
   title:
-    - Jordan Belson - Mandala (1953)
+    - Jordan Belson - Mandala, 1953
 ---
