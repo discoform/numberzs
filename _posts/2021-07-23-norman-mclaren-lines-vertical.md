@@ -30,4 +30,10 @@ post_content:
 
 
       Lines Vertical is Normand McLaren and Evelyn Lambart, with Music by Maurice Blackburn.
+# Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
+recommended_posts:
+  title:
+    - "Norman McLaren: Canon"
+    - "Norman McLaren: Lines Horizontal"
+    - "Norman McLaren: Mosaic"
 ---
