@@ -15,9 +15,6 @@ media:
   - type: featured_media_youtube
     youtubeID: L8r9t135_xY
     caption: "Stan Brakhage: Stellar (1993)"
-  - type: featured_media_image
-    path: /assets/images/stan-brakhage-stellar.jpg
-    caption: kjjlj
 # Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.
 post_content:
   - type: content
