@@ -16,6 +16,7 @@ group :jekyll_plugins do
   gem "execjs", "~> 2.7.0"
   gem "jekyll-autoprefixer", "~> 1.0.2"
   gem 'jekyll-sitemap'
+  gem 'jekyll-paginate'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

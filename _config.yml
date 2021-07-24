@@ -32,6 +32,9 @@ logo: logo.jpg
 ###############################################################
 plugins:
   - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 11
 
 markdown: kramdown
 

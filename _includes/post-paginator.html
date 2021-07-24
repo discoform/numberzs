@@ -1,0 +1,16 @@
+<section class="paginated-content">
+    <h1>Recent posts</h1>
+    {% for post in paginator.posts %}
+    {% if post != latest_post %}
+    <article class="recent-post">
+        <a href="{{ post.url }}">
+            {% picture {{post.image}} 1:1 --alt {{post.excerpt}} %}
+            <div class="container">
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.excerpt }}</p>
+            </div>
+        </a>
+    </article>
+    {% endif %}
+    {% endfor %}
+</section>

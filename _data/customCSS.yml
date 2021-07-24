@@ -1,33 +1,79 @@
-customCSS: |-
-  @media only screen and (min-width: 1200px) {
-  body.post {
-  display: grid;
-  gap: 28px;
-  padding-left: 28px;
-  padding-right: 28px;
-  max-width: 1127px;
+customCSS: |+
+  
 
-  }
-  header.site-header.container {
-      grid-column: 1 / 2;
-      max-width:  300px;
-  }
 
-  main.container {
-      grid-column: 2 / 2;
-        
-  }
-  main.container article {
-    
-      width:800px;
-  }
-  }
 
   h1.site-title{
   display: inline-block;
   background-color: rgb(48, 48, 48);
   color: #ffffff;
   padding: 10px 20px;
-  margin: 0;
   }
+
+
+  section.paginated-content {
+      grid-row: 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+  }
+
+  section.paginated-content .recent-post a {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      align-items: center;
+      margin-bottom: 20px;
+      text-decoration: none;
+  }
+
+  section.paginated-content .recent-post a img {
+      width: 90%;
+      border-radius: 100%;
+      grid-column-start: 1;
+      grid-column-end: 2;
+  }
+
+  section.paginated-content .recent-post a img > div {
+      grid-column-start: 2;
+      grid-column-end: 3;
+  }
+
+
+
+  @media only screen and (min-width: 1200px) {
+
+  body.post {
+  display: grid;
+  gap: 28px;
+  padding-left: 28px;
+  padding-right: 28px;
+  max-width: 1127px;
+  }
+
+  header.site-header.container {
+      grid-column: 1 / 2;
+      max-width:  300px;
+  }
+
+  main.container {
+      grid-column: 2 / 2;    
+  }
+  main.container article {
+   width:800px;
+    }
+    
+    section.paginated-content {
+    
+      margin-top: 120px;
+      margin-bottom: 120px;
+  }
+    
+    section.paginated-content .recent-post a {
+    
+      grid-template-columns: 230px 1fr;
+    
+  }
+  }
+
+
+
 enable-customCSS: true

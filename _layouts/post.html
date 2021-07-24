@@ -20,7 +20,7 @@
             </figure>
             {% endfor %}
             {% endif %}
-            <h2>{{latest_post.title}}</h2>
+            <h1>{{latest_post.title}}</h1>
         </header>
         {%- for item in latest_post.post_content -%}
         <section class="content {{item.type}}-block{% if item.full-width == true %} full-width{%- endif -%}">
@@ -43,8 +43,8 @@
             {% endif %}
         </section>
         {%- endfor %}
-        {% include post-footer.html %}
     </article>
+    {% include post-paginator.html %}
     {% endfor %}
     {% else %}
     <article>
@@ -75,7 +75,7 @@
             </figure>
             {% endfor %}
             {% endif %}
-            <h2>{{page.title}}</h2>
+            <h1>{{page.title}}</h1>
         </header>
         {%- for item in page.post_content -%}
         <section class="content {{item.type}}-block{% if item.full-width == true %} full-width{%- endif -%}">
@@ -102,4 +102,5 @@
     </article>
     {% endif %}
 </main>
+
 {% include footer.html %}

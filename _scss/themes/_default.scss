@@ -12,7 +12,6 @@ lite-youtube {
     background-position: center center;
     background-size: cover;
     cursor: pointer;
-
 }
 
 // /* gradient */
@@ -111,7 +110,8 @@ lite-youtube.lyt-activated > .lty-playbtn {
     background-color: #fefefe;
     padding: 40px;
     border: 1px solid $light-grey;
-margin: auto;    max-width: 1200px;
+    margin: auto;
+    max-width: 1200px;
 }
 
 #modalBtn:hover {
@@ -132,3 +132,4 @@ margin: auto;    max-width: 1200px;
     text-decoration: none;
     cursor: pointer;
 }
+
