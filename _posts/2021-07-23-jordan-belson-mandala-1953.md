@@ -29,5 +29,5 @@ post_content:
 recommended_posts:
   title:
     - John Whitney Catalog, 1961
-    - John Whitney, Permutations 1966, Generative graphics
+    - John Whitney, Permutations (1966)
 ---

@@ -2,7 +2,7 @@
 # Layout field provides no options and is hidden in the post editor.
 layout: post
 # Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!
-title: John Whitney, Permutations 1966, Generative graphics
+title: John Whitney, Permutations (1966)
 # Published date is automatically generated upon creation of post.
 date: 2021-07-23T17:26:43.764Z
 # Image field is required for SEO.

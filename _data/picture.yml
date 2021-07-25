@@ -12,3 +12,14 @@ presets:
     dimension_attributes: true
     attributes:
       img:  loading="lazy" data-sizes="auto"'
+  thumbnail-sm:
+      markup: auto
+      nomarkdown: false
+      formats: [original]
+      widths: [96, 184]
+      fallback_width: 184
+      fallback_format: original
+      data_sizes: true
+      dimension_attributes: true
+      attributes:
+        img:  loading="lazy" data-sizes="auto"'

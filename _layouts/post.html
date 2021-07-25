@@ -47,7 +47,6 @@
     {% include post-paginator.html %}
     {% endfor %}
     {% else %}
-    <article>
         <header class="article-header">
             {%- if page.media -%}
             {% for item in page.media -%}
@@ -77,29 +76,32 @@
             {% endif %}
             <h1>{{page.title}}</h1>
         </header>
-        {%- for item in page.post_content -%}
-        <section class="content {{item.type}}-block{% if item.full-width == true %} full-width{%- endif -%}">
-            {% if item.type == 'content' -%}
-            {{item.content | markdownify }}
-            {%- endif -%}
-            {% if item.type == 'youtube' -%}
-            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
-            <figure>
-                <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
-                <figcaption>{{item.caption}}</figcaption>
-            </figure>
-            {% endif %}
-            {% if item.type == 'figure' -%}
-            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
-            <figure>
-                {% picture {{item.path}} --alt {{item.caption}} %}
-                <figcaption>{{item.caption}}</figcaption>
-            </figure>
-            {% endif %}
-        </section>
-        {%- endfor %}
-        {% include post-footer.html %}
+        <article class='content'>
+            {%- for item in page.post_content -%}
+            <section class="{{item.type}}-block{% if item.full-width == true %} full-width{%- endif -%}">
+                {% if item.type == 'content' -%}
+                {{item.content | markdownify }}
+                {%- endif -%}
+                {% if item.type == 'youtube' -%}
+                <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
+                <figure>
+                    <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
+                    <figcaption>{{item.caption}}</figcaption>
+                </figure>
+                {% endif %}
+                {% if item.type == 'figure' -%}
+                <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
+                <figure>
+                    {% picture {{item.path}} --alt {{item.caption}} %}
+                    <figcaption>{{item.caption}}</figcaption>
+                </figure>
+                {% endif %}
+            </section>
+            {%- endfor %}
+            {% include post-sidebar.html %}
+            {% include post-footer.html %}
     </article>
+
     {% endif %}
 </main>
 

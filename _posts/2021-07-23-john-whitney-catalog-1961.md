@@ -28,5 +28,5 @@ post_content:
 recommended_posts:
   title:
     - Jordan Belson - Mandala, 1953
-    - John Whitney, Permutations 1966, Generative graphics
+    - John Whitney, Permutations (1966)
 ---

@@ -133,3 +133,121 @@ lite-youtube.lyt-activated > .lty-playbtn {
     cursor: pointer;
 }
 
+// paginated content-> homepage
+
+section.paginated-content {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    .recent-post {
+        a {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            align-items: center;
+            margin-bottom: 20px;
+            text-decoration: none;
+            img {
+                width: 80%;
+                border-radius: 100%;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                > div {
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+            }
+            div {
+                h3 {
+                    margin-bottom: 0;
+                    font-size: 80%;
+                }
+                p {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    section.paginated-content {
+        margin-top: 120px;
+        margin-bottom: 120px;
+        .recent-post a {
+            grid-template-columns: 230px 1fr;
+            div {
+                h3 {
+                    margin-bottom: 16px;
+                    font-size: 100%;
+                }
+                p {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
+
+// theme settings -> NUmberzs
+
+h1.site-title {
+    display: inline-block;
+    background-color: rgb(48, 48, 48);
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    .post {
+        display: grid;
+        padding-left: 28px;
+        padding-right: 28px;
+        max-width: 1127px;
+    }
+    .site-header.container {
+        grid-row: 1;
+        grid-column: 1 / 2;
+    }
+    main.container {
+        grid-row: 2;
+        grid-column: 1 / 2;
+        display: grid;
+
+        .article-header {
+            grid-row: 1;
+            grid-column: 1 / 3;
+        }
+        .content {
+            grid-row: 2;
+            grid-column: 1 / 3;
+            display: grid;
+            gap: 40px;
+            max-width: unset;
+            margin-top: 0;
+
+            section {
+                grid-column: 1 / 2;
+
+
+            }
+        }
+        .post-sidebar {
+            grid-row: 1;
+            grid-column: 2 / 3;
+            max-width: 300px;
+        }
+
+        .post-footer {
+            grid-row: 2;
+            grid-column: 1 / 3;
+        }
+    }
+}

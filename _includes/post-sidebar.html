@@ -1,0 +1,12 @@
+<aside class="post-sidebar">
+    {% if page.recommended_posts %}
+    <div class="sidebar-widget">
+        <strong>Recent Posts</strong>
+        <ul class="recommended-content">
+            {% for item in page.recommended_posts.title %}
+            <li><a href="/{{item | slugify}}">{{item}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</aside>
