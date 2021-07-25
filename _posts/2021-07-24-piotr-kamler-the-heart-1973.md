@@ -6,7 +6,7 @@ title: "Piotr Kamler: The Heart (1973)"
 # Published date is automatically generated upon creation of post.
 date: 2021-07-24T03:02:11.715Z
 # Image field is required for SEO.
-image: /assets/images/piotr-kamler-the-heart.png
+image: /assets/images/piotr-kamler-the-heart.jpg
 # Excerpt is required for SEO. Limit of 140 characters.
 excerpt: " An impossible love for the girl in the inner working of the clock
   that stopped."

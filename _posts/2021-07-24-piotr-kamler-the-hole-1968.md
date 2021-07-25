@@ -6,7 +6,7 @@ title: "Piotr Kamler: The Hole (1968)"
 # Published date is automatically generated upon creation of post.
 date: 2021-07-24T03:10:29.656Z
 # Image field is required for SEO.
-image: /assets/images/piotr-kamler-the-hole.png
+image: /assets/images/piotr-kamler-the-hole.jpg
 # Excerpt is required for SEO. Limit of 140 characters.
 excerpt: The Hole is a sometimes harrowing film by Piotr Kamler. Adventures of a
   non-being in search of his ego.
