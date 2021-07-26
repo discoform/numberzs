@@ -56,23 +56,24 @@ header {
 
             &.responsive {
                 width: 100%;
-                min-height: calc(30vh - 80px);
+
 
                 a.icon {
+
                     z-index: 9999;
-                    margin-bottom: 100px;
+                    margin: 0 auto
                 }
                 ul {
                     z-index: 9998;
-                    margin: 40px auto auto;
+margin-top: 0;
                     list-style-type: none;
 
                     font-weight: bolder;
-                    position: absolute;
+
 
                     a {
                         border-bottom: 1px solid $light-grey;
-                        margin: 14px;
+                        margin: 14px auto;
                     }
                 }
             }
@@ -87,8 +88,7 @@ header {
         display: flex;
         justify-content: space-between;
         nav#main-menu {
-            margin-top: auto;
-            margin-bottom: auto;
+
             .icon {
                 display: none;
             }
