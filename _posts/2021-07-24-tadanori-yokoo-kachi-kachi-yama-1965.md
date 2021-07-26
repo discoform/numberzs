@@ -2,7 +2,7 @@
 # Layout field provides no options and is hidden in the post editor.
 layout: post
 # Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!
-title: Tadanori Yokoo "Kachi Kachi Yama" (1965)
+title: "Tadanori Yokoo: Kachi Kachi Yama (1965)"
 # Published date is automatically generated upon creation of post.
 date: 2021-07-24T03:36:15.605Z
 # Image field is required for SEO.
