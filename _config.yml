@@ -72,6 +72,10 @@ sass:
 #   - vendor/ruby/
 
 ###############################################################
-## Collections
+## Collections. Collections are used for the Galleries post type, and Pages
 ###############################################################
-# collections:
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
