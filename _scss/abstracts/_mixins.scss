@@ -32,3 +32,15 @@
   }
 }
 
+@mixin menu-expand {
+	ul {
+		display: none;
+		overflow: hidden;
+	}
+
+	&.responsive ul {
+		margin-top: 20px/2;
+		width: 100%;
+		display: block;
+	}
+}
