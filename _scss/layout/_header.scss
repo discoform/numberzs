@@ -69,6 +69,11 @@ header {
 
                     font-weight: bolder;
                     position: absolute;
+
+                    a {
+                        border-bottom: 1px solid $light-grey;
+                        margin: 14px;
+                    }
                 }
             }
         }
