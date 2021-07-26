@@ -32,6 +32,18 @@ collections:
         fields:
         - {label: 'Code', name: 'customCSS', widget: 'code', default_language: 'CSS', output_code_only: true, required: false, hint: 'CSS Only, please.' }
         - {label: 'Enable Custom CSS?', name: 'enable-customCSS', widget: 'boolean', required: false, hint: 'Set to true if you want to enable your custom CSS.'}
+  - name: "Page"
+    label: "Pages"
+    folder: "_page/"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Image", name: "image", widget: "hidden", default: "/logo.jpg"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "page content", name: "body", widget: "markdown" }
   - name: 'post'
     label: 'Post'
     folder: '_posts/'
