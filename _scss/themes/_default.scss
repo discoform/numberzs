@@ -142,12 +142,11 @@ section.paginated-content {
     .recent-post {
         a {
             display: grid;
-            grid-template-columns: 120px 1fr;
+            grid-template-columns: 96px 1fr;
             align-items: center;
             margin-bottom: 20px;
             text-decoration: none;
             img {
-                width: 80%;
                 border-radius: 100%;
                 grid-column-start: 1;
                 grid-column-end: 2;
@@ -171,6 +170,8 @@ section.paginated-content {
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     margin-top: 8px;
+                    margin-bottom: 0;
+                    font-size: 70%;
                 }
             }
         }
@@ -201,11 +202,10 @@ h1.site-title {
     display: inline-block;
 
     @media only screen and (min-width: 1024px) {
-
-    background-color: rgb(48, 48, 48);
-    color: #ffffff;
-    padding: 10px 20px;
-    margin: 0;
+        background-color: rgb(48, 48, 48);
+        color: #ffffff;
+        padding: 10px 20px;
+        margin: 0;
     }
 }
 
@@ -254,8 +254,6 @@ h1.site-title {
     }
 }
 
-
-
 // article navigation on posts
 
 .article-navigation {
@@ -275,4 +273,3 @@ h1.site-title {
         }
     }
 }
-
