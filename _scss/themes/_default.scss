@@ -183,6 +183,9 @@ section.paginated-content {
         margin-bottom: 120px;
         .recent-post a {
             grid-template-columns: 230px 1fr;
+            img {
+                width: 90%;
+            }
             div {
                 h2 {
                     margin-bottom: 16px;
@@ -190,6 +193,7 @@ section.paginated-content {
                 }
                 p {
                     margin-top: 16px;
+                    font-size: 80%;
                 }
             }
         }
