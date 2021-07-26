@@ -235,8 +235,6 @@ h1.site-title {
 
             section {
                 grid-column: 1 / 2;
-
-
             }
         }
         .post-sidebar {
@@ -252,24 +250,22 @@ h1.site-title {
     }
 }
 
-
 // article navigation on posts
 
-.article-navigation{
+.article-navigation {
     grid-column: 1 / 3;
     display: flex;
     justify-content: space-between;
-margin-bottom: $margin;
-    a{
+    margin-bottom: $margin;
+    a {
         padding: 10px 20px;
         text-decoration: none;
-        font-size: .8rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
-&:hover{
-    background-color: $light-grey;
-
-}
-
+        color: $text-color;
+        border: 1px solid $light-grey;
+        &:hover {
+            background-color: $light-grey;
+        }
     }
-
 }
