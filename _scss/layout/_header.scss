@@ -48,7 +48,7 @@ header {
                 margin: auto;
                 width: 100%;
                 padding: 10px 10px 5px;
-                background-color: $dark-grey;
+
                 img {
                     max-height: 24px;
                 }
@@ -56,20 +56,17 @@ header {
 
             &.responsive {
                 width: 100%;
-                min-height: calc(100vh - 80px);
-                background-color: $dark-grey;
-                display: flex;
-                justify-content: center;
+                min-height: calc(30vh - 80px);
 
                 a.icon {
                     z-index: 9999;
-                    margin-top: 0;
+                    margin-bottom: 100px;
                 }
                 ul {
                     z-index: 9998;
                     margin: 40px auto auto;
                     list-style-type: none;
-                    color: #fff;
+
                     font-weight: bolder;
                     position: absolute;
                 }

@@ -1,9 +1,3 @@
-
-#these links will display in a nav menu within the sitewide header
 mainNavigation:
-  - name: About
-    link: /about/
-  - name: Contact
-    link: /contact/
-  - name: Search
-    link: /search/
+  - name: Home
+    link: /
