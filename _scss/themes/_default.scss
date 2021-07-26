@@ -251,3 +251,17 @@ h1.site-title {
         }
     }
 }
+
+
+// article navigation on posts
+
+.article-navigation{
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-between;
+margin-bottom: $margin;
+    a{
+        text-decoration: none;
+    }
+
+}

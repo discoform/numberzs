@@ -16,18 +16,5 @@
 
 <body class="{{page.layout}}">
 	<header class="site-header container">
-		{%- if site.data.siteInfo.display == true %}
-		<h1 id="modalBtn" class="site-title">{{site.title}}</h1>
-		<!-- Trigger/Open The Modal -->
-		<!-- The Modal -->
-		<div id="infoModal" class="modal">
-			<!-- Modal content -->
-			<div class="modal-content">
-				<span class="close">&times;</span>
-				{{site.data.siteInfo.about | markdownify}}
-			</div>
-		</div>
-		{% else %}
-		<h1 class="site-title">{{site.title}}</h1>
-		{% endif %}
+		<h1 class="site-title"><a href="/">{{site.title}}</a></h1>
 	</header>

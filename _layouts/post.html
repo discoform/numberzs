@@ -47,17 +47,17 @@
     {% include post-paginator.html %}
     {% endfor %}
     {% else %}
-        <header class="article-header">
-            {%- if page.media -%}
-            {% for item in page.media -%}
-            <figure class="featured-media">
-                {% if item.type == 'featured_media_image' -%}
-                <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
-                {% picture {{item.path}} --alt {{item.caption}} %}
-                {% endif %}
-                {% if item.type == 'featured_media_youtube' -%}
-                <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
-                <script type="application/ld+json">
+    <header class="article-header">
+        {%- if page.media -%}
+        {% for item in page.media -%}
+        <figure class="featured-media">
+            {% if item.type == 'featured_media_image' -%}
+            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
+            {% picture {{item.path}} --alt {{item.caption}} %}
+            {% endif %}
+            {% if item.type == 'featured_media_youtube' -%}
+            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
+            <script type="application/ld+json">
                 {
                 "@context": "http://schema.org",
                 "@type": "VideoObject",
@@ -68,40 +68,47 @@
                "embedUrl": "https://www.youtube.com/embed/{{item.youtubeID}}"
                 }
               </script>
+            <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
+            {% endif %}
+            <figcaption>{{item.caption}}</figcaption>
+        </figure>
+        {% endfor %}
+        {% endif %}
+        <h1>{{page.title}}</h1>
+    </header>
+    <article class='content'>
+        {%- for item in page.post_content -%}
+        <section class="{{item.type}}-block{% if item.full-width == true %} full-width{%- endif -%}">
+            {% if item.type == 'content' -%}
+            {{item.content | markdownify }}
+            {%- endif -%}
+            {% if item.type == 'youtube' -%}
+            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
+            <figure>
                 <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
-                {% endif %}
                 <figcaption>{{item.caption}}</figcaption>
             </figure>
-            {% endfor %}
             {% endif %}
-            <h1>{{page.title}}</h1>
-        </header>
-        <article class='content'>
-            {%- for item in page.post_content -%}
-            <section class="{{item.type}}-block{% if item.full-width == true %} full-width{%- endif -%}">
-                {% if item.type == 'content' -%}
-                {{item.content | markdownify }}
-                {%- endif -%}
-                {% if item.type == 'youtube' -%}
-                <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
-                <figure>
-                    <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
-                    <figcaption>{{item.caption}}</figcaption>
-                </figure>
-                {% endif %}
-                {% if item.type == 'figure' -%}
-                <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
-                <figure>
-                    {% picture {{item.path}} --alt {{item.caption}} %}
-                    <figcaption>{{item.caption}}</figcaption>
-                </figure>
-                {% endif %}
-            </section>
-            {%- endfor %}
-            {% include post-sidebar.html %}
-            {% include post-footer.html %}
+            {% if item.type == 'figure' -%}
+            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
+            <figure>
+                {% picture {{item.path}} --alt {{item.caption}} %}
+                <figcaption>{{item.caption}}</figcaption>
+            </figure>
+            {% endif %}
+        </section>
+        {%- endfor %}
+        {% include post-sidebar.html %}
+        {% include post-footer.html %}
     </article>
-
+    <div class="article-navigation">
+        {% if page.previous.url %}
+        <a title="previous post" class="prev" href="{{page.previous.url}}">⇤ previous post</a>
+        {% endif %}
+        {% if page.next.url %}
+        <a title="next post" class="next" href="{{page.next.url}}">next post ⇥</a>
+        {% endif %}
+    </div>
     {% endif %}
 </main>
 
