@@ -1,3 +1,6 @@
 mainNavigation:
-  - name: Home
+  - name: 🏠 Home
     link: /
+  - name: ℹ️ About
+    link: /about/
+
