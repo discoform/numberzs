@@ -23,5 +23,5 @@ post_content:
 # Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
 recommended_posts:
   title:
-    - "Belarisk: The Hand That Bit Itself {Geist}"
+    - "Belarisk: The Hand That Bit Itself {Geist} (2016)"
 ---
