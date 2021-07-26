@@ -15,6 +15,17 @@ collections:
         fields:
         - { label: About the site, name: about, widget: markdown }
         - { label: Display About Modal?, name: display, widget: boolean }
+
+      - label: "Site Navigation"
+        name: "siteNavigation"
+        file: "_data/siteNavigation.yml"
+        fields:
+          - label: "Main Navigation"
+            name: "mainNavigation"
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Link, name: link, widget: string }
       - label: 'Custom CSS'
         name: 'customCSS'
         file: _data/customCSS.yml
