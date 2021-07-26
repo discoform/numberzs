@@ -138,7 +138,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 section.paginated-content {
     grid-row: 2;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     .recent-post {
         a {
             display: grid;
@@ -261,7 +261,15 @@ h1.site-title {
     justify-content: space-between;
 margin-bottom: $margin;
     a{
+        padding: 10px 20px;
         text-decoration: none;
+        font-size: .8rem;
+        text-transform: uppercase;
+&:hover{
+    background-color: $light-grey;
+
+}
+
     }
 
 }
