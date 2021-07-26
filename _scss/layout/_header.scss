@@ -14,25 +14,18 @@ header {
 @media only screen and (max-width: 1023px) {
     header.site-header {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: flex-end;
+        padding: 0 14px;
         .site-title {
-            order: 2;
-            margin: 0 auto;
-            text-align: center;
             font-size: 100%;
+            position: absolute;
+            left: 14px;
         }
 
-        #main-menu {
+        nav#main-menu {
             @include menu-expand;
-            order: 1;
-            text-align: center;
-            margin: 10px auto 0;
-            padding: 10px auto;
-            width: 100%;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: space-between;
 
             ul,
             li a {
@@ -45,35 +38,30 @@ header {
             }
 
             a.icon {
-                margin: auto;
-                width: 100%;
-                padding: 10px 10px 5px;
-
-                img {
-                    max-height: 24px;
-                }
+                margin: 14px 0 14px auto;
+                width: 34px;
             }
 
             &.responsive {
+                display: flex;
+                flex-direction: column;
                 width: 100%;
 
-
                 a.icon {
-
                     z-index: 9999;
-                    margin: 0 auto
+                    margin: 14px 0 0 auto;
                 }
                 ul {
                     z-index: 9998;
-margin-top: 0;
+                    margin-top: 0;
                     list-style-type: none;
-
                     font-weight: bolder;
 
-
                     a {
+                        border-top: 1px solid $light-grey;
                         border-bottom: 1px solid $light-grey;
-                        margin: 14px auto;
+                        margin: 0 auto 14px auto;
+                        padding-left: 0;
                     }
                 }
             }
