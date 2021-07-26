@@ -199,10 +199,14 @@ section.paginated-content {
 
 h1.site-title {
     display: inline-block;
+
+    @media only screen and (min-width: 1024px) {
+
     background-color: rgb(48, 48, 48);
     color: #ffffff;
     padding: 10px 20px;
     margin: 0;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -250,6 +254,8 @@ h1.site-title {
     }
 }
 
+
+
 // article navigation on posts
 
 .article-navigation {
@@ -269,3 +275,4 @@ h1.site-title {
         }
     }
 }
+
