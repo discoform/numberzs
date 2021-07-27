@@ -101,6 +101,18 @@ collections:
               - { label: YouTube ID, name: youtubeID, widget: string }
               - { label: Alt text and Caption, name: caption, widget: string }
               - {label: 'Full Width?', name: 'full-width', widget: 'boolean', default: false, hint: 'Display the video fill width.'}
+      - label: 'External Links'
+        name: 'links'
+        widget: 'list'
+        comment: 'Optional links to external sites. These are added to the markup with rereferrer tags.'
+        hint: 'Optional links to external sites. '
+        types:
+          - label: 'External Link'
+            name: 'externalLink'
+            widget: object
+            fields:
+              - { label: Link Title, name: linkTitle, widget: string }
+              - { label: Link URL, name: linkURL, widget: string}
       - label: 'Add Recommended Post?'
         name: 'recommended_posts'
         widget: 'object'

@@ -1,10 +1,22 @@
-<aside class="post-sidebar">
+<aside class="post-sidebar" role="complementary">
     {% if page.recommended_posts %}
     <div class="sidebar-widget">
         <strong>Related Posts</strong>
         <ul class="recommended-content">
             {% for item in page.recommended_posts.title %}
             <li><a href="/{{item | slugify}}">{{item}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    {% if page.links %}
+    <div class="external-links">
+        <strong>External Links</strong>
+        <ul>
+            {%- for item in page.links -%}
+            {% if item.type == "externalLink" %}
+            <li><a href="{{item.linkURL}}">{{item.linkTitle}}</a></li>
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
