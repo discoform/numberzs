@@ -74,7 +74,6 @@ lite-youtube.lyt-activated > .lty-playbtn {
     width: 1px;
 }
 
-
 // paginated content-> homepage
 
 section.paginated-content {
@@ -223,7 +222,6 @@ h1.site-title {
 }
 
 .date-published {
-
     font-size: 0.8rem;
     div {
         display: inline-block;
@@ -233,10 +231,22 @@ h1.site-title {
     }
 }
 
-
-
-.copyright-act{
+.copyright-act {
     line-height: 1;
     text-align: center;
     margin: auto;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.recommended-content li {
+    margin: $margin/4 0;
+
+    > a {
+
+        padding: 5px 0;
+    }
 }

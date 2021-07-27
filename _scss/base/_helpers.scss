@@ -66,20 +66,3 @@
   }
 }
 
-.post-footer {
-  display: flex;
-  justify-content: space-between;
-
-  ul.recommended-content li {
-    margin: $margin/4 0;
-
-    a {
-      margin-left: 0;
-      color: $brand-color;
-      padding: 10px;
-    }
-  }
-  a.next {
-    margin: auto 0 auto auto;
-  }
-}
