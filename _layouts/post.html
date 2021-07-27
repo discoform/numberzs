@@ -78,7 +78,7 @@
         {% endif %}
         <h1>{{page.title}}</h1>
     </header>
-    <article class='content'>
+    <article class='content {{page.layout}}'>
         {%- for item in page.post_content -%}
         <section class="{{item.type}}-block{% if item.full-width == true %} full-width{%- endif -%}">
             {% if item.type == 'content' -%}
