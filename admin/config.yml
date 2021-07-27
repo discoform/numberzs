@@ -9,13 +9,6 @@ collections:
     editor:
       preview: false
     files:
-      - label: 'Site Info'
-        name: 'siteInfo'
-        file: _data/siteInfo.yml
-        fields:
-        - { label: About the site, name: about, widget: markdown }
-        - { label: Display About Modal?, name: display, widget: boolean }
-
       - label: "Site Navigation"
         name: "siteNavigation"
         file: "_data/siteNavigation.yml"
