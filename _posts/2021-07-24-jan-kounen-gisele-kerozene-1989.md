@@ -5,6 +5,8 @@ layout: post
 title: "Jan Kounen: Gisele Kerozene (1989)"
 # Published date is automatically generated upon creation of post.
 date: 2021-07-24T03:16:12.260Z
+# Modified date is automatically generated upon creation of post. Update Manually when the post is updated
+dateModified: 2021-07-27T17:14:28.765Z
 # Image field is required for SEO.
 image: /assets/images/jan-kounen-gisele-kerozene.jpg
 # Excerpt is required for SEO. Limit of 140 characters.

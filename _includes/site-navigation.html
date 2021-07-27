@@ -1,3 +1,7 @@
+{% if site.data.siteNavigation.mainNavigation == empty %}
+<!-- Add Main Navigation menu items to display navigation -->
+{% else %}
+{% if site.data.siteNavigation.mainNavigation -%}
 <nav id="main-menu" class="topnav">
     <a href="javascript:void(0);" title="Expand Menu" class="icon" onclick="mainNavigation()"><img class="icon"
             src="/assets/icons/menu.svg" alt="Expand Main Menu"></a>
@@ -7,3 +11,5 @@
         {% endfor -%}
     </ul>
 </nav>
+{% endif -%}
+{%endif%}

@@ -12,7 +12,9 @@ The blog is built with a static site generator called <a href="http://jekyllrb.c
 
 ## Privacy Information
 
-We use privacy focused visitor analytics via Fathom. Fathom Analytics has built their company as a privacy first organization. [See more about Fathom at their website.](https://usefathom.com/why-fathom). Fathom allows us to see what posts get the most traffic on our site without gathering any personal information from you.
+We use privacy focused visitor analytics via Fathom. Fathom Analytics has built their company as a privacy first organization. Fathom allows us to see what posts get the most traffic on our site without gathering any personal information from you.
+
+[See more about Fathom at their website.](https://usefathom.com/why-fathom) 
 
 We don't use any other third-party services or dependencies. We don't use social media, we don't have a mailing list, and we have no incentive to collect data from your visit.
 

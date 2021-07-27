@@ -1,4 +1,12 @@
 <footer class="post-footer">
-
-
+    <section class="date-published">
+        <div class="published">
+            Published {{ page.date | date: "%m/%d/%Y" }}
+        </div>
+        {% if page.dateModified %}
+        <div class="modified">
+            Updated {{ page.dateModified | date: "%m/%d/%Y" }}
+        </div>
+        {% endif %}
+    </section>
 </footer>

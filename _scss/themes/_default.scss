@@ -214,7 +214,8 @@ h1.site-title {
 }
 
 @media only screen and (min-width: 1200px) {
-    .post, .page {
+    .post,
+    .page {
         display: grid;
         padding-left: 28px;
         padding-right: 28px;
@@ -265,15 +266,27 @@ h1.site-title {
     display: flex;
     justify-content: space-between;
     margin-bottom: $margin;
+    font-size: 0.8rem;
+
     a {
         padding: 10px 20px;
         text-decoration: none;
-        font-size: 0.8rem;
         text-transform: uppercase;
         color: $text-color;
         border: 1px solid $light-grey;
         &:hover {
             background-color: $light-grey;
         }
+    }
+}
+
+.date-published {
+
+    font-size: 0.8rem;
+    div {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $text-color;
     }
 }
