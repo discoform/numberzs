@@ -14,21 +14,6 @@ lite-youtube {
     cursor: pointer;
 }
 
-// /* gradient */
-// lite-youtube::before {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==);
-//     background-position: top;
-//     background-repeat: repeat-x;
-//     height: 60px;
-//     padding-bottom: 50px;
-//     width: 100%;
-//     transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
-// }
-
 /* responsive iframe with a 16:9 aspect ratio
     thanks https://css-tricks.com/responsive-iframes/
 */
@@ -89,49 +74,6 @@ lite-youtube.lyt-activated > .lty-playbtn {
     width: 1px;
 }
 
-//   modal from https://www.w3schools.com/howto/howto_css_modals.asp
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 10; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: $dark-grey; /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    padding: 40px;
-    border: 1px solid $light-grey;
-    margin: auto;
-    max-width: 1200px;
-}
-
-#modalBtn:hover {
-    cursor: pointer;
-}
-
-/* The Close Button */
-.close {
-    color: $mid-grey;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: $dark-grey;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 // paginated content-> homepage
 
@@ -289,4 +231,12 @@ h1.site-title {
         text-transform: uppercase;
         color: $text-color;
     }
+}
+
+
+
+.copyright-act{
+    line-height: 1;
+    text-align: center;
+    margin: auto;
 }

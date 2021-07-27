@@ -69,10 +69,8 @@
 .post-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: $margin;
-  margin-bottom: $margin;
+
   ul.recommended-content li {
-    padding: 0 10px;
     margin: $margin/4 0;
 
     a {
