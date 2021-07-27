@@ -10,12 +10,12 @@
     </div>
     {% endif %}
     {% if page.links %}
-    <div class="external-links">
+    <div class="sidebar-widget">
         <strong>External Links</strong>
-        <ul>
+        <ul class="recommended-content">
             {%- for item in page.links -%}
             {% if item.type == "externalLink" %}
-            <li><a href="{{item.linkURL}}">{{item.linkTitle}}</a></li>
+            <li><a href="{{item.linkURL}}" target="_blank" rel="noreferrer">{{item.linkTitle}}</a></li>
             {% endif %}
             {% endfor %}
         </ul>
