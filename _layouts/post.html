@@ -20,7 +20,9 @@
             </figure>
             {% endfor %}
             {% endif %}
-            <h1>{{latest_post.title}}</h1>
+            <a href="{{latest_post.url}}">
+                <h1>{{latest_post.title}}</h1>
+            </a>
         </header>
         {%- for item in latest_post.post_content -%}
         <section class="content {{item.type}}-block{% if item.full-width == true %} full-width{%- endif -%}">

@@ -5,6 +5,8 @@ layout: post
 title: "Piotr Kamler: The Hole (1968)"
 # Published date is automatically generated upon creation of post.
 date: 2021-07-24T03:10:29.656Z
+# Modified date is automatically generated upon creation of post. Update Manually when the post is updated
+dateModified: 2021-07-27T16:39:07.376Z
 # Image field is required for SEO.
 image: /assets/images/piotr-kamler-the-hole.jpg
 # Excerpt is required for SEO. Limit of 140 characters.

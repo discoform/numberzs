@@ -5,6 +5,8 @@ layout: post
 title: "John Whitney: Matrix III (1972)"
 # Published date is automatically generated upon creation of post.
 date: 2021-07-24T03:26:02.016Z
+# Modified date is automatically generated upon creation of post. Update Manually when the post is updated
+dateModified: 2021-07-27T16:02:47.980Z
 # Image field is required for SEO.
 image: /assets/images/john-whitney-matrix.jpg
 # Excerpt is required for SEO. Limit of 140 characters.

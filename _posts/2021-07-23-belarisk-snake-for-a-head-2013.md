@@ -4,7 +4,9 @@ layout: post
 # Title field provides the post title and a sanitized slug/permalink based on the title content. !!! Use a descriptive title and then do not change it !!!
 title: "Belarisk: Snake For A Head (2013)"
 # Published date is automatically generated upon creation of post.
-date: 2021-07-23T17:48:22.776Z
+date: 2021-07-27T16:14:50.379Z
+# Modified date is automatically generated upon creation of post. Update Manually when the post is updated
+dateModified: 2021-07-27T16:16:25.662Z
 # Image field is required for SEO.
 image: /assets/images/belarisk-snake-for-a-head.jpg
 # Excerpt is required for SEO. Limit of 140 characters.
