@@ -33,6 +33,7 @@ logo: logo.jpg
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-feed
 
 paginate: 11
 

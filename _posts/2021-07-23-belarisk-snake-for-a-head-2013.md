@@ -6,7 +6,7 @@ title: "Belarisk: Snake For A Head (2013)"
 # Published date is automatically generated upon creation of post.
 date: 2021-07-27T16:14:50.379Z
 # Modified date is automatically generated upon creation of post. Update Manually when the post is updated
-dateModified: 2021-07-27T21:28:34.450Z
+dateModified: 2021-07-27T23:48:08.514Z
 # Image field is required for SEO.
 image: /assets/images/belarisk-snake-for-a-head.jpg
 # Excerpt is required for SEO. Limit of 140 characters.
@@ -28,7 +28,7 @@ post_content:
       Belarisk is the music project of multi-disciplinary artist Lee Tindall. Tindall is also known to record under the names Aphid Palisades, Astronaut (with Daniel Lopatin AKA Oneohtrix Point Never), Mutation In The Gryd and more.
 
 
-      Tindall's music has been released on multiple underground cassette labels (including his own imprint, Gryd Complex. *Snake For A Head* in particular is from his 2013 cassette release “On Amorphous Dawn”, published by **NNA Tapes**.
+      Tindall's music has been released on multiple underground cassette labels (including his own imprint, Gryd Complex). *Snake For A Head* is from his 2013 cassette release “On Amorphous Dawn”, published by **NNA Tapes**.
 # Optional links to external sites. These are added to the markup with rereferrer tags.
 links:
   - type: externalLink

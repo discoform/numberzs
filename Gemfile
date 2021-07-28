@@ -17,6 +17,8 @@ group :jekyll_plugins do
   gem "jekyll-autoprefixer", "~> 1.0.2"
   gem 'jekyll-sitemap'
   gem 'jekyll-paginate'
+  gem 'jekyll-email-protect'
+  gem 'jekyll-feed'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

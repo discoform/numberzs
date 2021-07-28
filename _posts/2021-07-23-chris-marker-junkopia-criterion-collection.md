@@ -21,21 +21,17 @@ media:
 post_content:
   - type: content
     content: >-
-      French filmmaker **Chris Marker** will forever be one of our most
-      beloved *visionnaires*. His dystopian points of view are beautifully
-      articulated in short films like *La Jetée
-      (1962)* and *[Junkopia](https://numberzs.com/chris-marker-junkopia-criterion-collection/)*,
-      and in feature length experimental films like *Level Five* (to name just a
-      couple of our favorites).
-
-
-      Junkopia was filmed at the Emeryville Mudflats outside of San Francisco while also filming sections of the documentary Sans Soleil.
+      Junkopia was filmed at the Emeryville Mudflats outside of San Francisco
+      while also filming sections of the documentary Sans Soleil.
 
 
       This short film is among our favorite selections of Chris Marker's catalog. A haunting soundtrack of ambient voices and radio signals accompanies a sequence of handheld scenes cropped to focus on various sculptures in the park without explanation. Only toward the end of the film are we shown the proximity of these scultpures to civilization. Up to that point these images may as well exist outside of time or reality.
 
 
       Codirected by Frank Simeone and John Chapman, JUNKOPIA was filmed at the Emeryville Mudflats outside of San Francisco while Chris Marker was also shooting the Vertigo sections of Sans Soleil.
+
+
+      French filmmaker **Chris Marker** will forever be one of our most beloved *visionnaires*. His dystopian points of view are beautifully articulated in short films like *La Jetée (1962)* and *Junkopia*, and in feature length experimental films like *Level Five* (to name just a couple of our favorites).
 # Optional links to external sites. These are added to the markup with rereferrer tags.
 links:
   - type: externalLink

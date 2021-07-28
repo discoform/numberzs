@@ -21,21 +21,19 @@ media:
 post_content:
   - type: content
     content: >-
-      French filmmaker **Chris Marker** will forever be one of our most
-      beloved *visionnaires*. His dystopian points of view are beautifully
-      articulated in short films like *La Jetée
-      (1962)* and *[Junkopia](https://numberzs.com/chris-marker-junkopia-criterion-collection/)*,
-      and in feature length experimental films like *Level Five* (to name just a
-      couple of our favorites).
-
-
-      Lesser known video works by Chris Marker can be seen in the Chris Marker collection *Bestiaire* aka *Petit Bestiaire* from 1990. In these short videos Marker focuses his camera on one or another species from the animal kingdom.
+      Lesser known video works by Chris Marker can be seen in the Chris Marker
+      collection *Bestiaire* aka *Petit Bestiaire* from 1990. In these short
+      videos Marker focuses his camera on one or another species from the animal
+      kingdom.
 
 
       **Chat écoutant la musique** is one of three films from the collection, and we rank it as our favorite.
 
 
       In this short video we're treated to a soundtrack of melancholic piano music, glimpses of Chris Marker's creative living space, some of his musical instruments (including a classic Yamaha DX-7) and, of course, footage of his beloved cats napping and listening to music.
+
+
+      French filmmaker **Chris Marker** will forever be one of our most beloved *visionnaires*. His dystopian points of view are beautifully articulated in short films like *La Jetée (1962)* and *[Junkopia](https://numberzs.com/chris-marker-junkopia-criterion-collection/)*, and in feature length experimental films like *Level Five* (to name just a couple of our favorites).
 # Optional links to external sites. These are added to the markup with rereferrer tags.
 links:
   - type: externalLink
