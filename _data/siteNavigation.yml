@@ -3,3 +3,9 @@ mainNavigation:
     link: /
   - name: About
     link: /about/
+  - name: RSS Feed
+    link: /feed.xml
+
+
+
+
