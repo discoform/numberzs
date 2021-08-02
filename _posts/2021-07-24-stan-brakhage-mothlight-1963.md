@@ -5,11 +5,13 @@ layout: post
 title: "Stan Brakhage: Mothlight (1963)"
 # Published date is automatically generated upon creation of post.
 date: 2021-07-24T02:29:15.510Z
+# Modified date is automatically generated upon creation of post. Update Manually when the post is updated
+dateModified: 2021-08-02T15:36:25.872Z
 # Image field is required for SEO.
 image: /assets/images/stan-brakhage-mothlight.jpg
 # Excerpt is required for SEO. Limit of 140 characters.
 excerpt: Stan Brakhage produced Mothlight without the use of a camera, using
-  what he then described as "a whole new film technique."
+  what he then described as a whole new film technique.
 # Optional featured media adds one or more full-width image or YouTube embeds to the top of the post.
 media:
   - type: featured_media_youtube
