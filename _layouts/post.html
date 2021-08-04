@@ -1,64 +1,13 @@
 {% include header.html %}
 <main class="container">
-    {%- if page.url == '/' %}
-    {% for post in site.posts limit:1 %}
-    {%- assign latest_post = site.posts[0] -%}
-    <article>
-        <header class="article-header">
-            {%- if latest_post.media -%}
-            {%- for item in latest_post.media %}
-            <figure class="featured-media">
-                {%- if item.type == 'featured_media_image' %}
-                <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
-                {% picture {{item.path}} --alt {{item.caption}} %}
-                {%- endif -%}
-                {%- if item.type == 'featured_media_youtube' -%}
-                <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
-                <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
-                {%- endif %}
-                <figcaption>{{item.caption}}</figcaption>
-            </figure>
-            {% endfor %}
-            {% endif %}
-            <a href="{{latest_post.url}}">
-                <h1>{{latest_post.title}}</h1>
-            </a>
-        </header>
-        {%- for item in latest_post.post_content -%}
-        <section class="content {{item.type}}-block{% if item.full-width == true %} full-width{%- endif -%}">
-            {% if item.type == 'content' -%}
-            {{item.content | markdownify }}
-            {%- endif -%}
-            {% if item.type == 'youtube' -%}
-            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
-            <figure>
-                <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
-                <figcaption>{{item.caption}}</figcaption>
-            </figure>
-            {% endif %}
-            {% if item.type == 'figure' -%}
-            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
-            <figure>
-                {% picture {{item.path}} --alt {{item.caption}} %}
-                <figcaption>{{item.caption}}</figcaption>
-            </figure>
-            {% endif %}
-        </section>
-        {%- endfor %}
-    </article>
-    {% include post-paginator.html %}
-    {% endfor %}
-    {% else %}
     <header class="article-header">
         {%- if page.media -%}
         {% for item in page.media -%}
         <figure class="featured-media">
             {% if item.type == 'featured_media_image' -%}
-            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
             {% picture {{item.path}} --alt {{item.caption}} %}
             {% endif %}
             {% if item.type == 'featured_media_youtube' -%}
-            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
             <script type="application/ld+json">
                 {
                 "@context": "http://schema.org",
@@ -85,14 +34,12 @@
             {{item.content | markdownify }}
             {%- endif -%}
             {% if item.type == 'youtube' -%}
-            <!-- youtube embed using https://github.com/paulirish/lite-youtube-embed -->
             <figure>
                 <lite-youtube videoid="{{item.youtubeID}}" playlabel="{{item.caption}}"></lite-youtube>
                 <figcaption>{{item.caption}}</figcaption>
             </figure>
             {% endif %}
             {% if item.type == 'figure' -%}
-            <!-- responsive images using https://github.com/rbuchberger/jekyll_picture_tag -->
             <figure>
                 {% picture {{item.path}} --alt {{item.caption}} %}
                 <figcaption>{{item.caption}}</figcaption>
@@ -111,7 +58,5 @@
         <a title="next post" class="next" href="{{page.next.url}}">next post ⇥</a>
         {% endif %}
     </div>
-    {% endif %}
 </main>
-
 {% include footer.html %}

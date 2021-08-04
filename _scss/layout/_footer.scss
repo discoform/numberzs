@@ -2,12 +2,12 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 
-
-footer{
-
+footer {
     margin-top: $margin;
     margin-bottom: $margin;
-
-
-
+    .copyright-act {
+        line-height: 1;
+        text-align: center;
+        margin: auto;
+    }
 }

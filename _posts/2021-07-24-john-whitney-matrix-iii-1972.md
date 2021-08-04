@@ -21,15 +21,17 @@ media:
 post_content:
   - type: content
     content: >-
-      John Whitney's Matrix III is an abstract computer-generated animation set
-      to music by Terry Riley. The film consists of a group of triangles,
-      squares and hexagons. 
+      John Whitney's Matrix III is an abstract computer-generated animation of a
+      group of triangles, squares and hexagons with all forms are moving within
+      an invisible matrix. The film is well paired with a soundtrack by Terry
+      Riley
 
 
-      All forms are moving within an invisible matrix.
+      John Whitney, Sr. is well known as an American animator, composer and inventor. He is widely considered to be one of the fathers of computer animation, and there is a wealth of material to review.
 # Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
 recommended_posts:
   title:
     - John Whitney Catalog, 1961
     - John Whitney, Permutations (1966)
+    - Jordan Belson - Mandala, 1953
 ---

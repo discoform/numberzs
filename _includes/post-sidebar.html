@@ -1,5 +1,5 @@
 <aside class="post-sidebar" role="complementary">
-    {% if page.recommended_posts %}
+    {% if page.recommended_posts and page.recommended_posts.title != empty %}
     <div class="sidebar-widget">
         <strong>Related Posts</strong>
         <ul class="recommended-content">
@@ -9,7 +9,7 @@
         </ul>
     </div>
     {% endif %}
-    {% if page.links %}
+    {% if page.links and page.links != empty %}
     <div class="sidebar-widget">
         <strong>External Links</strong>
         <ul class="recommended-content">
@@ -22,3 +22,4 @@
     </div>
     {% endif %}
 </aside>
+

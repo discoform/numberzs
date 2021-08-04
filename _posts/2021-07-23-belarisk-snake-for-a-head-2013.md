@@ -16,7 +16,7 @@ excerpt: A fascinating series of ambiguously dark moments in deep stasis by
 media:
   - type: featured_media_youtube
     youtubeID: eGQxgtv7RbY
-    caption: "Belarisk: Snake For A Head"
+    caption: "Watch video - Belarisk: Snake For A Head"
 # Optional post content features a mini pagebuilder to add blocks of written content, images, and YouTube embeds to the post. Recommended at least one instance of WYSIWYG block.
 post_content:
   - type: content

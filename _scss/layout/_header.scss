@@ -22,82 +22,20 @@ header {
             left: 14px;
             margin-bottom: 0;
         }
-
-        nav#main-menu {
-            @include menu-expand;
-            display: flex;
-            justify-content: space-between;
-
-            ul,
-            li a {
-                padding: 0;
-            }
-
-            li a {
-                display: block;
-                padding: 10px;
-            }
-
-            a.icon {
-                margin: 14px 0 0 auto;
-                width: 34px;
-            }
-
-            &.responsive {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-
-                a.icon {
-                    z-index: 9999;
-                    margin: 14px 0 0 auto;
-                }
-                ul {
-                    z-index: 9998;
-                    margin-top: 0;
-                    list-style-type: none;
-                    font-weight: bolder;
-                    li {
-                        margin: 0 auto 0 auto;
-                        border-top: 1px solid $light-grey;
-                        border-bottom: 1px solid $light-grey;
-
-                        &:last-of-type {
-                           border-top:none;
-                        }
-                        a {
-
-                            padding-left: 0;
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 @media only screen and (min-width: 1024px) {
     .site-header {
         margin-top: $margin/2;
         margin-bottom: $margin/2;
-
         display: flex;
         justify-content: space-between;
-        nav#main-menu {
-            margin: auto 0;
-            .icon {
-                display: none;
-            }
-            ul {
-                display: unset;
-
-                li {
-                    display: inline;
-
-                    a {
-                        padding: 10px 0 10px 10px;
-                    }
-                }
-            }
+       h1.site-title {
+            display: inline-block;
+            background-color: rgb(48, 48, 48);
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 0;
         }
     }
 }

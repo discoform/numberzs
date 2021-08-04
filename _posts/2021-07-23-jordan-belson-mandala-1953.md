@@ -5,6 +5,8 @@ layout: post
 title: Jordan Belson - Mandala, 1953
 # Published date is automatically generated upon creation of post.
 date: 2021-07-23T17:18:07.633Z
+# Modified date is automatically generated upon creation of post. Update Manually when the post is updated
+dateModified: 2021-07-28T18:05:25.714Z
 # Image field is required for SEO.
 image: /assets/images/jordan-belson-mandala.jpg
 # Excerpt is required for SEO. Limit of 140 characters.
@@ -19,15 +21,27 @@ media:
 post_content:
   - type: content
     content: >-
-      Trailer for Mandala (1953) , from the new Center for Visual Music DVD,
-      which contains 13 rare experimental animation films. It also features
-      Chakra and Meditation by Jordan Belson.
+      Jordan Belson is a somewhat lesser known and somewhat less influential
+      animator from the 1960's and 1970's (relative to someone like John
+      Whitney, at least).
 
 
-      Title list, film notes and details are at [Center for Visual Music](http://centerforvisualmusic.org/visualmusicdvd/)
+      I think Belson's partial obscurity is mainly due to the extreme control of organizations like the Center for Visual Music, who have a vested interest in selling DVD's of some animator's works. 
+
+
+      Nevertheless, this teaser for Jordan Belson's Mandala provides some indication as to just how sophisticated his work can be.
+
+
+      Taken from the new Center for Visual Music DVD, which contains 13 rare experimental animation films.
+# Optional links to external sites. These are added to the markup with rereferrer tags.
+links:
+  - type: externalLink
+    linkTitle: Center for Visual Music
+    linkURL: https://centerforvisualmusic.squarespace.com
 # Optional recommended posts are determined by the post author and added here. This is good for SEO and internal linking.
 recommended_posts:
   title:
     - John Whitney Catalog, 1961
     - John Whitney, Permutations (1966)
+    - "John Whitney: Matrix III (1972)"
 ---

@@ -50,7 +50,7 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' , comment: 'Published date is automatically generated upon creation of post.', hint: 'Published date is automatically generated upon creation of post, but can be changed if needed.' }
       - { label: 'Modified Date', name: 'dateModified', widget: 'datetime' , comment: 'Modified date is automatically generated upon creation of post. Update Manually when the post is updated', hint: 'Modified date is automatically generated upon creation of post. Update Manually when the post is updated' }
       - { label: 'Structured Data Image', name: 'image', widget: 'image', comment: 'Image field is required for SEO.', hint: 'This image will not display on the post, but an image is required here for Structured Data and will be used by Open Graph and Twitter summary cards.' }
-      - { label: 'Short Excerpt', name: 'excerpt', widget: 'text', pattern: ['^.{50,140}$', 'Must be between 50–140 characters.'], comment: 'Excerpt is required for SEO. Limit of 140 characters.', hint: 'Excerpt is required for SEO. Limit of 140 characters.' }
+      - { label: 'Short Excerpt', name: 'excerpt', widget: 'string', pattern: ['^.{50,140}$', 'Must be between 50–140 characters.'], comment: 'Excerpt is required for SEO. Limit of 140 characters.', hint: 'Excerpt is required for SEO. Limit of 140 characters.' }
       - label: 'Featured Media'
         name: 'media'
         widget: 'list'
@@ -84,15 +84,15 @@ collections:
             summary: '{{fields.label}}'
             required: false
             fields:
-            - {label: 'Post Content', name: 'content', widget: 'markdown',  buttons: [ bold, italic, code, link, heading-three, quote, bulleted-list, numbered-list ] }
+            - {label: 'Post Content', name: 'content', widget: 'markdown',  buttons: [ bold, italic, code, link, heading-two, heading-three, quote, bulleted-list, numbered-list ] }
           - label: 'Image'
             name: 'figure'
             widget: 'object'
             required: false
             fields:
               - { label: Image, name: path, widget: image }
-              - { label: Alt text and Caption, name: caption, widget: string }
-              - {label: 'Full Width?', name: 'full-width', widget: 'boolean', default: false, hint: 'Display the image fill width.' }
+              - { label: Alt text and Caption, name: caption, widget: string, hint: 'Required for SEO and Accessibility.' }
+              - {label: 'Full Width?', name: 'full-width', widget: 'boolean', default: false, hint: 'Force the image to fill the width of the container?' }
           - label: 'YouTube Embed'
             name: 'youtube'
             widget: 'object'
