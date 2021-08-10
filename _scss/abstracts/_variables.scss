@@ -34,22 +34,11 @@ $radius: 0.28571429rem;
 
 $margin: 2.8em;
 
-
 /// Container's maximum width
-/// @type Length
+
 $max-width: 1127px !default;
 
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+// Breakpoints
 $breakpoints: (
-  "small": 320px,
-  "medium": 768px,
-  "large": 1024px,
-) !default;
-
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: "/assets/" !default;
+  desktop: 1024px
+);

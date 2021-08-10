@@ -5,7 +5,7 @@
 
 // theme settings -> NUmberzs
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: map-get($breakpoints, desktop)) {
     .post,
     .page,
     .home {

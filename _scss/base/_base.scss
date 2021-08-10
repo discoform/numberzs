@@ -27,7 +27,7 @@ html {
 a {
   color: $text-color;
   @include on-event {
-    color: $text-color;
+    color: $text-color;;
     text-decoration: underline;
   }
 }
