@@ -19,4 +19,4 @@ We don't use any other third-party services or dependencies. We don't use social
 
 ## Contact
 
-If you have questions or comments about the blog you can reach us at <a href="mailto:{{ site.email | encode_email }}" title="contact us at our primary email address">contact us at our primary email address.</a>
+If you have questions or comments about the blog you can <a href="mailto:{{ site.email | encode_email }}" title="contact us at our primary email address">contact us at our primary email address.</a>
