@@ -3,7 +3,7 @@ layout: page
 title: About
 date: 2021-07-26T23:12:25.468Z
 ---
-**Numberzs** is a video blog built and maintained by [discoform.](https://github.com/discoform) The blog is partly inspired by [UbuWeb](http://ubuweb.com/), and wholly devoted to experimental or innovative motion graphics. The need for a blog of this type was, and is, purely a way of keeping track of, and sharing, work that interests or inspires us.
+**Numberzs** is a video blog built and maintained by [discoform.](https://discoform.com) The blog is partly inspired by [UbuWeb](http://ubuweb.com/), and wholly devoted to experimental or innovative motion graphics. The need for a blog of this type was, and is, purely a way of keeping track of, and sharing, work that interests or inspires us.
 
 ## Technical Information
 
